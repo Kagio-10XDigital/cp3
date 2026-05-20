@@ -16,9 +16,9 @@ as imagens `todo_mvc.png` (diagrama) e `telas-figma.png` (protótipo).
 │   │  - marcar feito  │       │   - campo descrição      │   │
 │   │  - botão excluir │       │   - botão salvar         │   │
 │   └────────┬─────────┘       └───────────┬──────────────┘   │
-└────────────│───────────────────────────── │────────────────┘
-             │ eventos                      │ eventos
-             ▼                              ▼
+└────────────│─────────────────────────────│──────────────────┘
+             │ eventos                     │ eventos
+             ▼                             ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                    CONTROLLER (Lógica)                      │
 │   ┌─────────────────────────────────────────────────────┐   │
@@ -28,9 +28,9 @@ as imagens `todo_mvc.png` (diagrama) e `telas-figma.png` (protótipo).
 │   │   + excluir_task(id)                                │   │
 │   │   + listar_tasks() → lista filtrada                 │   │
 │   └────────────────────────┬────────────────────────────┘   │
-└───────────────────────────── │──────────────────────────────┘
-                               │ CRUD
-                               ▼
+└────────────────────────────│────────────────────────────────┘
+                             │ CRUD
+                             ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                      MODEL (Dados)                          │
 │   ┌────────────────────┐   ┌───────────────────────────┐    │
@@ -46,13 +46,13 @@ as imagens `todo_mvc.png` (diagrama) e `telas-figma.png` (protótipo).
 
 ## Responsabilidades
 
-| Camada | Classe | Responsabilidade |
-|---|---|---|
-| Model | `Task` | Dados e estado de uma tarefa |
-| Model | `TaskRepository` | Persistência e consulta das tarefas |
-| Controller | `TaskController` | Regras de negócio e orquestração |
-| View | `ListaTasksView` | Exibe lista e botões de ação |
-| View | `FormularioTaskView` | Formulário de criação de tarefa |
+| Camada     | Classe               | Responsabilidade                    |
+| ---------- | -------------------- | ----------------------------------- |
+| Model      | `Task`               | Dados e estado de uma tarefa        |
+| Model      | `TaskRepository`     | Persistência e consulta das tarefas |
+| Controller | `TaskController`     | Regras de negócio e orquestração    |
+| View       | `ListaTasksView`     | Exibe lista e botões de ação        |
+| View       | `FormularioTaskView` | Formulário de criação de tarefa     |
 
 ## Fluxo de dados
 
@@ -61,6 +61,3 @@ as imagens `todo_mvc.png` (diagrama) e `telas-figma.png` (protótipo).
 3. **Controller** valida e aciona o **Repository** do **Model**
 4. **Model** persiste e retorna o estado atualizado
 5. **Controller** notifica a **View** para re-renderizar
-
-> **Nota:** As imagens `todo_mvc.png` e `telas-figma.png` devem ser exportadas
-> do Miro/Draw.io e do Figma respectivamente e salvas nesta pasta.

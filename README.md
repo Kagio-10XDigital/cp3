@@ -15,8 +15,8 @@ Portfólio individual desenvolvido na disciplina de **Engenharia de Software** d
 
 ```bash
 # Clone o repositório
-git clone https://github.com/<seu-usuario>/<nome-do-repo>.git
-cd <nome-do-repo>
+git clone https://github.com/Kagio-10XDigital/cp3.git
+cd cp3
 
 # Execute qualquer exercício diretamente
 python aula-03-requisitos/gymtrack_validador.py
@@ -33,6 +33,7 @@ python aula-03-requisitos/gymtrack_validador.py
 Arquivo: [`aula-03-requisitos/gymtrack_validador.py`](aula-03-requisitos/gymtrack_validador.py)
 
 Sistema **GymTrack** que valida dados de treinos de academia em três partes:
+
 - **Parte 1:** validação de entradas (nome, exercício, séries, peso e nível do aluno)
 - **Parte 2:** cálculo de métricas (volume total, carga relativa) e feedback personalizado por nível
 - **Parte 3:** histórico de treinos em memória e relatório consolidado por aluno
@@ -54,6 +55,7 @@ A implementação ilustra diretamente a diferença entre requisitos funcionais (
 Arquivo: [`aula-04-srs/srs_marketplace.py`](aula-04-srs/srs_marketplace.py)
 
 Modelagem e simulação do **FIAP Marketplace** baseada em um SRS (Software Requirements Specification):
+
 - **Parte 1:** estrutura de dados do SRS com 7 RFs, 7 RNFs e stakeholders definidos
 - **Parte 2:** simulação do sistema com classes `Produto`, `Carrinho` e `SistemaMarketplace` cobrindo cadastro, autenticação, listagem de produtos, carrinho e finalização de compra
 
@@ -69,10 +71,6 @@ O exercício demonstra como o SRS guia o design: cada classe e método pode ser 
 
 ### Aula 05 — UML e Casos de Uso
 
-#### Diagrama
-
-![Diagrama de Casos de Uso — Biblioteca Digital](aula-05-casos-de-uso/diagrama-casos-de-uso.png)
-
 O diagrama modela o sistema de Biblioteca Digital com quatro atores (Leitor, Bibliotecário, Sistema de Notificação e Administrador) e casos de uso principais como Buscar Livro, Reservar Livro, Fazer Empréstimo, Devolver Livro e Gerenciar Acervo. O relacionamento `<<extend>>` entre "Reservar Livro" e "Notificar Disponibilidade" representa a notificação opcional quando o livro está indisponível.
 
 #### Código
@@ -80,6 +78,7 @@ O diagrama modela o sistema de Biblioteca Digital com quatro atores (Leitor, Bib
 Arquivo: [`aula-05-casos-de-uso/biblioteca_digital.py`](aula-05-casos-de-uso/biblioteca_digital.py)
 
 Implementação orientada a objetos da Biblioteca Digital em três partes:
+
 - **Parte 1:** modelos `Livro` e `Usuario`
 - **Parte 2:** operações de empréstimo e reserva
 - **Parte 3:** sistema completo com notificações e relatório de acervo
@@ -93,10 +92,6 @@ Implementação orientada a objetos da Biblioteca Digital em três partes:
 ---
 
 ### Aula 06 — Diagramas de Atividades
-
-#### Diagrama
-
-![Diagrama de Atividades — Cadastro de Usuário](aula-06-atividades/diagrama-atividades.png)
 
 Diagrama com swimlanes representando três raias: Usuário, Sistema e Administrador. O fluxo parte do preenchimento do formulário, passa por validações automáticas do sistema e, em caso de dados válidos, aguarda aprovação manual do administrador antes de ativar a conta. Desvios de validação retornam ao usuário com mensagem de erro.
 
@@ -116,10 +111,6 @@ Implementação do fluxo de cadastro e aprovação em Python com estados bem def
 
 ### Aula 07 — Diagramas de Sequência
 
-#### Diagrama
-
-![Diagrama de Sequência — Transferência Nubank](aula-07-sequencia/diagrama-sequencia.png)
-
 O diagrama representa a interação entre cinco participantes: Usuário, App Nubank, Serviço de Autenticação, Serviço de Transferência e Banco Central. Mostra o fluxo de mensagens síncronas e assíncronas desde a solicitação até a confirmação final, incluindo o loop de verificação de saldo e o bloco alternativo para transferência insuficiente.
 
 #### Código
@@ -137,10 +128,6 @@ Simulação do fluxo de transferência bancária inspirado no Nubank, implementa
 ---
 
 ### Aula 08 — Diagramas de Classes
-
-#### Diagrama
-
-![Diagrama de Classes — Sistema de Streaming](aula-08-classes/diagrama-classes.png)
 
 Diagrama com hierarquia de herança (`Conteudo` como classe base para `Filme` e `Serie`), associações (`Usuario` possui `Perfil`, `Assinatura` e histórico de `Reproducao`) e dependências com o `CatalogoService`. Multiplicidades indicam que um usuário pode ter até 5 perfis e uma assinatura ativa por vez.
 
@@ -162,9 +149,9 @@ Implementação em Python do sistema de streaming com herança, encapsulamento e
 
 #### Imagens
 
-| To-Do List MVC | Protótipo Figma |
-|---|---|
-| ![Diagrama MVC](aula-09-arquitetura/todo_mvc.png) | ![Telas Figma](aula-09-arquitetura/telas-figma.png) |
+| Estrutura MVC                                     |
+| ------------------------------------------------- |
+| ![Diagrama MVC](aula-09-arquitetura/estrutura.png) |
 
 O diagrama ilustra a separação entre Model (dados das tarefas), View (interface de lista e formulário) e Controller (lógica de adicionar, concluir e excluir tarefas). O protótipo no Figma apresenta as telas de listagem e criação de tarefa com fluxo de navegação.
 
@@ -172,6 +159,6 @@ O diagrama ilustra a separação entre Model (dados das tarefas), View (interfac
 
 ## Links
 
-- Repositório: [github.com/\<seu-usuario\>/\<nome-do-repo\>](https://github.com)
+- Repositório: [https://github.com/Kagio-10XDigital/cp3]
 - Disciplina: Engenharia de Software — FIAP 2026
 - Professor: Prof. Hercules Ramos
